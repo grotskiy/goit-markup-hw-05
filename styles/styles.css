@@ -694,15 +694,24 @@ body {
   width: 528px;
   height: 581px;
   background-color: var(--accent-background-color-thr);
+
   transform: translate(-50%, -50%);
 }
 
 .close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
-  left: 1026px;
-  top: 229px;
-  background: #FFFFFF;
+  border-radius: 50%;
+  background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
