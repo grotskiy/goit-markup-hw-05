@@ -13,7 +13,7 @@
   --accent-background-color-four: #44454e;
   --accent-color-fth: rgba(255, 255, 255, 0.6);
   --footer-background: #2f303a;
-  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 h1,
@@ -685,6 +685,19 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
+
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+
+  transition: visibility 250ms var(--transition-timing-function), opacity 250ms var(--transition-timing-function);
+}
+
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal {
@@ -708,10 +721,4 @@ body {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-}
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
 }
