@@ -13,6 +13,7 @@
   --accent-background-color-four: #44454e;
   --accent-color-fth: rgba(255, 255, 255, 0.6);
   --footer-background: #2f303a;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 h1,
@@ -610,6 +611,8 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-color-fth);
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mail:hover,
@@ -657,6 +660,8 @@ body {
   fill: #ffffff;
   cursor: pointer;
   background-color: var(--accent-background-color-four);
+
+  transition: color 250ms var(--transition-timing-function);
 }
 
 .footer-social-list-link:focus,
