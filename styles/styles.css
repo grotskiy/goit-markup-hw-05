@@ -528,6 +528,7 @@ body {
   margin-left: 30px;
   margin-bottom: 30px;
   cursor: pointer;
+  transition: box-shadow 250ms var(--transition-timing-function);
 }
 
 .port-about-name {
@@ -612,7 +613,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color-fth);
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mail:hover,
@@ -673,4 +674,35 @@ body {
 .footer-social-list-icon {
   width: 20px;
   height: 20px;
+}
+
+/* modal */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  background-color: var(--accent-background-color-thr);
+  transform: translate(-50%, -50%);
+}
+
+.close-btn {
+  width: 30px;
+  height: 30px;
+  left: 1026px;
+  top: 229px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
 }
