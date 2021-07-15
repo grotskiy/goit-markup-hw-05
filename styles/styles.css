@@ -121,19 +121,20 @@ body {
   color: var(--accent-color-sec);
 }
 
-.menu-link:hover,
+.menu-link:hover, 
 .menu-link:focus {
   color: var(--accent-color-logo);
 }
 
-.menu-link-focus {
+.menu-link.current {
   color: var(--accent-color-logo);
   position: relative;
 }
 
-.menu-link-focus::after {
+.menu-link.current::after {
   position: absolute;
   bottom: -33px;
+  left: 0;
   content: '';
   display: block;
   width: 100%;
