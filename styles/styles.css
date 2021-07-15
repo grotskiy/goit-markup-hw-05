@@ -104,10 +104,6 @@ body {
   color: var(--accent-color-logo);
 }
 
-.menu-link.current {
-  color: var(--accent-color-logo);
-}
-
 .menu-item:not(:last-child) {
   margin-right: 50px;
 }
